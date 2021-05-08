@@ -17,17 +17,16 @@ namespace Divisão
             valor2 = double.Parse(Console.ReadLine());
             Console.Write("\n");
 
-            valor3 = valor1 / valor2;
             
-            if(valor2 > 0)
+            if(valor2 != 0)
             {
+                valor3 = valor1 / valor2;
                 Console.WriteLine($"{valor1} dividido por {valor2} é = {valor3}");
             }
             else
             {
-            Console.WriteLine("Não é possivel dividir por zero");
-
-            Console.ReadKey();
+                Console.WriteLine("Não é possivel dividir por zero");
+                Console.ReadKey();
             }
         }
     }
